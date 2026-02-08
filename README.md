@@ -1,4 +1,4 @@
-# 📌 Autonomous FNOL Claim Processing Agent
+#  Autonomous FNOL Claim Processing Agent
 
 A lightweight backend agent that processes **First Notice of Loss (FNOL)** documents and performs:
 
@@ -11,7 +11,7 @@ A lightweight backend agent that processes **First Notice of Loss (FNOL)** docum
 
 ---
 
-# 🧠 Problem Breakdown
+#  Problem Breakdown
 
 The FNOL processing pipeline is divided into deterministic stages:
 
@@ -20,7 +20,7 @@ PDF → Text → Structured Fields → Validation → Classification → Routing
 
 ---
 
-# ⚙️ Tech Stack
+#  Tech Stack
 
 - Java 17
 - Spring Boot
@@ -31,7 +31,7 @@ PDF → Text → Structured Fields → Validation → Classification → Routing
 
 ---
 
-# 🧩 Architecture Modules
+#  Architecture Modules
 
 ## Parser Layer
 Extracts structured fields from FNOL PDFs using layout-aware pattern extraction.
@@ -55,7 +55,7 @@ else → STANDARD_QUEUE
 
 ---
 
-# 🧭 Approach & Logic Design
+#  Approach & Logic Design
 
 ## Step 1 — Document Ingestion
 
@@ -140,7 +140,7 @@ This makes the agent’s behavior auditable and transparent.
 
 ---
 
-## Step 8 — Test Matrix Driven Development
+## Step 7 — Test Matrix Driven Development
 
 The system was verified using multiple FNOL scenarios:
 
@@ -154,7 +154,7 @@ Each scenario was tested through Postman with JSON output verification.
 
 ---
 
-# ▶️ How To Run
+#  How To Run
 
 ## Prerequisites
 
@@ -195,6 +195,30 @@ POST /process-fnol
  value = upload FNOL PDF
 
 ---
+
+# Sample Routing Outputs
+
+## Fast Track 
+
+![Fast Track](docs/screenshots/fasttrack.jpeg)
+
+---
+
+## Missing Fields
+
+![Missing Fields](docs/screenshots/missingfield.jpeg)
+
+---
+
+## Fraud Signal 
+
+![Fraud Routing](docs/screenshots/fraudrouting.jpeg)
+
+---
+
+
+
+
 
 
 
